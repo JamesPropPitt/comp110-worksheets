@@ -23,4 +23,4 @@ sequence starts here
 sequence ends here
 ```
 Flowchart:
-                       ![flowchart](terminal game flowchart.png)
+                       ![flowchart]()
