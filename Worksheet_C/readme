@@ -11,29 +11,30 @@ Consider the following algorithm:
 10: 	return false 
 11: end procedure 
 
-This algorithm would appear to be a mix of python and pseudocode, which is checking for duplicates in a list.
+A) This algorithm would appear to be a mix of python and pseudocode, which is checking for duplicates in a list.
 Line 5 is simply saying: “If I and J are not looking at the same value but they are the same then return true” where true is stating that there is a duplicate.
 
 
-The worst case running time is Quadratic O(N^2) because for every nested loop in a procedure the power will double. So, three nested loops will result in O(N^3), four would be O(N^4) etc. This means that in this algorithm it will loop 16 times O(4^2), if we were to add another line it would loop 64 times and become O(4^3).
+B) The worst case running time is Quadratic O(N^2) because for every nested loop in a procedure the power will double. So, three nested loops will result in O(N^3), four would be O(N^4) etc. This means that in this algorithm it will loop 16 times O(4^2), if we were to add another line it would loop 64 times and become O(4^3).
 
 
-If the foor loop on line 4 is changed so that j ranges from 0 to i - 1 it will still be correct as this is simply making sure that i and j are not looking at the same value when checking for duplicates. Example: if i = 3 then j = 2 and therefore i will never equal j.
+C) If the foor loop on line 4 is changed so that j ranges from 0 to i - 1 it will still be correct as this is simply making sure that i and j are not looking at the same value when checking for duplicates. Example: if i = 3 then j = 2 and therefore i will never equal j.
 Because of this one can eliminate the first half of line 5 ‘if I != J’ and just have ‘list[i] = list[j]’ as we have concluded that i will never be equal to j.
 
 
-As explained in C, the algorithm will run twice as fast because the computation is only needing to check half as much data to produce an answer.
+D) As explained in C, the algorithm will run twice as fast because the computation is only needing to check half as much data to produce an answer.
 
 
-The algorithm would no longer be quadratic as the program does not need to run through each command separately and instead can determine the value of j just by looking at i.
+E) The algorithm would no longer be quadratic as the program does not need to run through each command separately and instead can determine the value of j just by looking at i.
 
 
-Sourced from “https://wiki.python.org/moin/TimeComplexity” it states that, written in big O notation, the time complexity of Python’s in built sort function is O(n log n)
+F) Sourced from “https://wiki.python.org/moin/TimeComplexity” it states that, written in big O notation, the time complexity of Python’s in built sort function is O(n log n)
 
+G)
 
+H)
 
-
-
+I)
 
 
 
