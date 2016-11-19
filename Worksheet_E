@@ -1,0 +1,11 @@
+So, I don't know if we are supposed to know the values of the registers but since we didn't I put them in a list? I don't know if that is what is messing me up here:
+
+```
+#V_l is short for Variable List, as I thought the variable was too long.
+V_l1 = ['s1','s2','s3','s4','s5']
+
+while V_l1[2] !=0:
+   V_l1[1] = V_l1[1] + V_l1[0]
+   V_l1[2] = V_l1[2] -1
+   print V_l1[1], V_l1[2]
+```   
