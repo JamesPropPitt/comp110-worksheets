@@ -1,0 +1,31 @@
+class Question_A:
+      s0 = 114
+      s1 = 241
+      s2 = 0
+      s3 = s0
+      while s3 != 0:
+         s2 = s2 + s1
+         s3 = s3 - 1
+
+
+         #Question_B: This has the effect of multiplying the values in $s0 and $s1 because this algorithm is saying take 1 away from s0 and add 241 to s2. This, when completed creates the effect of 114x241 where s3 is the counter and s2 is the result
+
+
+class Question_C:
+   s0 = 10
+   s1 = 1
+   s3 = s0
+   s2 = 0
+   while s0 != 0:
+      s2 = 0
+      s3 = s0
+   while s3 != 0:
+      s2 = s2 + s1
+      s3 = s3 - 1
+      s1 = s2
+      s0 = s0 -1
+      print s0,s1,s2,s3
+
+      #Question_D:
+
+
