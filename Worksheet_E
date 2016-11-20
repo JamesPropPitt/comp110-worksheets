@@ -1,31 +1,27 @@
-class Question_A:
-      s0 = 114
-      s1 = 241
-      s2 = 0
-      s3 = s0
-      while s3 != 0:
-         s2 = s2 + s1
-         s3 = s3 - 1
+while s3 != 0:
+    s2 = s2 + s1
+    s3 = s3 - 1
 
 
-         #Question_B: This has the effect of multiplying the values in $s0 and $s1 because this algorithm is saying take 1 away from s0 and add 241 to s2. This, when completed creates the effect of 114x241 where s3 is the counter and s2 is the result
+#Question_B: This has the effect of multiplying the values in $s0 and $s1 because this algorithm is saying take 1 away from s0 and add 241 to s2. This, when completed creates the effect of 114x241 where s3 is the counter and s2 is the result
 
+s0 = 10
+s1 = 1
+while s0 != 0:
+    s2 = 0
+    s3 = s0
+    while s3 != 0:
+        s2 = s2 + s1
+        s3 = s3 - 1
+    s1 = s2
+    s0 = s0 -1
+    print s0,s1,s2,s3
 
-class Question_C:
-   s0 = 10
-   s1 = 1
-   s3 = s0
-   s2 = 0
-   while s0 != 0:
-      s2 = 0
-      s3 = s0
-   while s3 != 0:
-      s2 = s2 + s1
-      s3 = s3 - 1
-      s1 = s2
-      s0 = s0 -1
-      print s0,s1,s2,s3
+#Question_D: The nested while loop is the same algorithm from Question A, s0 is the counter in this situation. s2 becomes the stored number of 10 for the first loop so then before the loop is reset, s1 becomes s2(10) and the loop is reset so that s2 becomes 0 but this time s2 has 10 added to it 10 times. This keeps going so that eventually the equation becomes 10 x 9 x 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1 which sums up to be roughly 3628800
 
-      #Question_D:
-
+		addi s0, 0, 10
+		addi s1, 0, 1
+inner:	mult s1, s0
+		addi s0, 0, -1
+        bne s0, 0, inner
 
